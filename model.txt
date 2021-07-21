@@ -1,0 +1,54 @@
+Colección "usuarios"
+
+{
+    RUT,
+    nombre,
+    apellido
+}
+
+
+Colección "archivos_audio"
+
+{
+    ID_archivo,
+    rate, // sample rate del archivo wav
+    sonido,
+    formato,
+    exterior,
+    fecha_grabacion,
+    duracion,
+    longitud,
+    latitud,
+    ciudad,
+    fecha_upload,
+    RUT
+}
+
+
+Colección "segmentos"
+
+{
+    ID_segmento,
+    duracion,
+    formato,
+    inicio,
+    fin,
+    ID_archivo_origen
+}
+
+
+Colección "fuentes"
+
+{
+    nombre_fuente,
+    descripcion,
+    nombre_super_categoria
+}
+
+
+Colección "tipos_de_fuentes"
+
+{
+    tipo,
+    archivos: [ID_archivo,...]
+}
